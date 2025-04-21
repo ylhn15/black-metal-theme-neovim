@@ -37,7 +37,16 @@ local M = {}
 
 ---@enum Themes
 M.themes = {
+	["dark-funeral"] = "dark-funeral",
+	bathory = "bathory",
+	burzum = "burzum",
+	gorgoroth = "gorgoroth",
+	immortal = "immortal",
+	khold = "khold",
 	marduk = "marduk",
+	mayhem = "mayhem",
+	nile = "nile",
+	venom = "venom",
 }
 
 for key, theme in pairs(M.themes) do

@@ -40,12 +40,15 @@ M.themes = {
 	["dark-funeral"] = "dark-funeral",
 	bathory = "bathory",
 	burzum = "burzum",
+	darkthrone = "darkthrone",
+	emperor = "emperor",
 	gorgoroth = "gorgoroth",
 	immortal = "immortal",
 	khold = "khold",
 	marduk = "marduk",
 	mayhem = "mayhem",
 	nile = "nile",
+	taake = "taake",
 	venom = "venom",
 }
 

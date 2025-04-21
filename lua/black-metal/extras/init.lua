@@ -15,46 +15,45 @@ M.extras = {
     windows_terminal = {ext = "json", url = "https://aka.ms/terminal-documentation", label = "Windows Terminal"},
     fzf = { ext = "zsh", url = "https://github.com/junegunn/fzf", label = "Fzf"},
     yazi = { ext = "toml", url = "https://github.com/sxyazi/yazi", label = "Yazi"},
-    -- stylua: ignore end
+	-- stylua: ignore end
 }
 
 ---@param contents string file contents (extra theme)
 ---@param fname string filename to save extra
 local function write(contents, fname)
-    print("[write] extra/" .. fname)
-    vim.fn.mkdir(vim.fs.dirname("extras/" .. fname), "p")
-    local file = io.open("extras/" .. fname, "w")
-    if file then
-        file:write(contents)
-        file:close()
-    end
+	print("[write] extra/" .. fname)
+	vim.fn.mkdir(vim.fs.dirname("extras/" .. fname), "p")
+	local file = io.open("extras/" .. fname, "w")
+	if file then
+		file:write(contents)
+		file:close()
+	end
 end
 
 ---Generates themes found in the Extras folder. Templates are stored in `black-metal/extras/`.
 function M.setup()
-    local black-metal = require("black-metal")
-    local themes = require("black-metal.palette").themes
+	local black_metal = require("black-metal")
+	local themes = require("black-metal.palette").themes
 
-    for extra, info in pairs(M.extras) do
-        package.loaded["black-metal.extras." .. extra] = nil
-        local template = require("black-metal.extras." .. extra)
-        for _, theme in pairs(themes) do
-            black-metal.load(theme)
-            local palette = require("black-metal.terminal").colors(true)
-            local fname = extra .. "/" .. theme .. "." .. info.ext
-            local url = "https://github.com/cdmill/black-metal.nvim/raw/main/extras/"
-                .. fname
-            write(
-                template.generate(palette, {
-                    extra = info.label,
-                    url = info.url,
-                    upstream = url,
-                    theme = string.upper(theme),
-                }),
-                fname
-            )
-        end
-    end
+	for extra, info in pairs(M.extras) do
+		package.loaded["black-metal.extras." .. extra] = nil
+		local template = require("black-metal.extras." .. extra)
+		for _, theme in pairs(themes) do
+			black_metal.load(theme)
+			local palette = require("black-metal.terminal").colors(true)
+			local fname = extra .. "/" .. theme .. "." .. info.ext
+			local url = "https://github.com/metalelf0/black-metal.nvim/raw/main/extras/" .. fname
+			write(
+				template.generate(palette, {
+					extra = info.label,
+					url = info.url,
+					upstream = url,
+					theme = string.upper(theme),
+				}),
+				fname
+			)
+		end
+	end
 end
 
 return M

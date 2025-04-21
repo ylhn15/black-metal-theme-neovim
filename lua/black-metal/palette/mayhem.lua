@@ -14,9 +14,9 @@ local M = {
 	property = "#c1c1c1",
 	string = "#f3ecd4",
 	type = "#eecc6c",
-	visual = "#666666",
+	visual = "#333333",
 	diag_red = "#5f8787",
-	diag_blue = "#555555",
+	diag_blue = "#999999",
 	diag_yellow = "#5f8787",
 	diag_green = "#6e4c4c",
 }

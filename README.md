@@ -1,2 +1,165 @@
-# black-metal-theme-neovim
-A collection of black-metal themed neovim colorschemes.
+# Black Metal Themes for Neovim
+
+A collection of black-metal inspired neovim colorschemes. 
+
+This new version is based on the great work done by @cdmill on https://github.com/cdmill/neomodern.nvim. Big hail to him!
+
+## Rationale
+
+Each theme palette is a slight variation of the base one. I picked two accent colors from an album cover for each band.
+
+## Installation
+
+With lazy.nvim:
+
+```lua
+-- Using lazy.nvim
+{
+  "metalelf0/black-metal-theme-neovim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    require("black-metal").setup({
+      -- optional configuration here
+    })
+    require("black-metal").load()
+  end,
+}
+```
+
+## Configuration
+
+There are 14 themes included, each with a light and dark variant. Yes, I know, light variants aren't `TRVE`. Just don't use them if you don't like them.
+The light theme is used when `{ variant = "light" }` is passed to `setup(options)` or when `vim.o.background = "light"`.
+
+Default options are given below:
+
+```lua
+require("black-metal").setup({
+  -----MAIN OPTIONS-----
+  --
+  -- Can be one of: bathory | burzum | dark-funeral | darkthrone | emperor | gorgoroth | immortal | impaled-nazarene | khold | marduk | mayhem | nile | taake | venom
+  theme = "bathory",
+  -- Can be one of: 'light' | 'dark', or set via vim.o.background
+  variant = "dark",
+  -- Use an alternate, darker bg
+  alt_bg = false,
+  -- If true, docstrings will be highlighted like strings, otherwise they will be
+  -- highlighted like comments. Note, behavior is dependent on the language server.
+  colored_docstrings = true,
+  -- If true, highlights the {sign,fold} column the same as cursorline
+  cursorline_gutter = true,
+  -- If true, highlights the gutter darker than the bg
+  dark_gutter = false,
+  -- if true favor treesitter highlights over semantic highlights
+  favor_treesitter_hl = false,
+  -- Don't set background of floating windows. Recommended for when using floating
+  -- windows with borders.
+  plain_float = false,
+  -- Show the end-of-buffer character
+  show_eob = true,
+  -- If true, enable the vim terminal colors
+  term_colors = true,
+  -- Keymap (in normal mode) to toggle between light and dark variants.
+  toggle_variant_key = nil,
+  -- Don't set background
+  transparent = false,
+
+  -----DIAGNOSTICS and CODE STYLE-----
+  --
+  diagnostics = {
+    darker = true, -- Darker colors for diagnostic
+    undercurl = true, -- Use undercurl for diagnostics
+    background = true, -- Use background color for virtual text
+  },
+  -- The following table accepts values the same as the `gui` option for normal
+  -- highlights. For example, `bold`, `italic`, `underline`, `none`.
+  code_style = {
+    comments = "italic",
+    conditionals = "none",
+    functions = "none",
+    keywords = "none",
+    headings = "bold", -- Markdown headings
+    operators = "none",
+    keyword_return = "none",
+    strings = "none",
+    variables = "none",
+  },
+
+  -----PLUGINS-----
+  --
+  -- The following options allow for more control over some plugin appearances.
+  plugin = {
+    lualine = {
+      -- Bold lualine_a sections
+      bold = true,
+      -- Don't set section/component backgrounds. Recommended to not set
+      -- section/component separators.
+      plain = false,
+    },
+    cmp = { -- works for nvim.cmp and blink.nvim
+      -- Don't highlight lsp-kind items. Only the current selection will be highlighted.
+      plain = false,
+      -- Reverse lsp-kind items' highlights in blink/cmp menu.
+      reverse = false,
+    },
+  },
+
+  -- CUSTOM HIGHLIGHTS --
+  --
+  -- Override default colors
+  colors = {},
+  -- Override highlight groups
+  highlights = {},
+})
+-- Convenience function that simply calls `:colorscheme <theme>` with the theme
+-- specified in your config.
+require("black-metal").load()
+```
+
+## Customization
+
+Example using custom colors and highlights:
+
+```lua
+require("black-metal").setup {
+  colors = {
+    orange = '#ff8800', -- define a new color
+    keyword = '#817faf', -- redefine an existing color
+  },
+  highlights = {
+    ...
+    ["@keyword"] = { fg = "$keyword", fmt = 'bold' },
+    ["@function"] = { bg = "$orange", fmt = 'underline,italic' },
+    ...
+  },
+}
+```
+
+See `black-metal.palette` for color names.
+
+## Included themes
+
+## Cover references
+
+- Bathory: Hammerheart, 1990
+- Burzum: Filosofem, 1996
+- Dark Funeral: The secrets of the black arts, 1996
+- Darkthrone: Transilvanian Hunger, 1994
+- Emperor: In the nightside eclipse, 1994
+- Gorgoroth: Twilight of the Idols - In Conspiracy with Satan, 2003
+- Immortal: At the heart of winter, 1999
+- Impaled Nazarene: Tol Cormpt Norz Norz Norz..., 1993
+- Khold: Phantom, 2002
+- Marduk: Panzer Division Marduk, 1999
+- Mayhem: The dawn of the black hearts, 1995
+- Nile: Black seeds of vengeance, 2000
+- Taake:  Hordalands doedskvad, 2005
+- Venom: Welcome to hell, 1981
+
+## Disclaimers
+
+- I know Nile don't play black metal, but I don't want to name the repo 'Black Metal and Technical Death Metal' ;).
+- Bands and album choices have been made completely on personal taste. If your fave band is missing, just ask and I'll try adding it.
+
+

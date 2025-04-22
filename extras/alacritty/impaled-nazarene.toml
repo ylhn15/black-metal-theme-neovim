@@ -1,4 +1,4 @@
-# name: EMPEROR colors for Alacritty
+# name: IMPALED-NAZARENE colors for Alacritty
 # url: https://github.com/alacritty/alacritty
 # upstream: ${upstream}
 # author: Andrea Schiavini (original code by Casey Miller)
@@ -21,7 +21,7 @@ green = '#c1c1c1'
 yellow = '#888888'
 blue = '#aaaaaa'
 magenta = '#999999'
-cyan = '#756482'
+cyan = '#DC2A22'
 white = '#c1c1c1'
 
 # Bright colors
@@ -31,8 +31,8 @@ red = '#5f8787'
 green = '#c1c1c1'
 yellow = '#888888'
 blue = '#aaaaaa'
-magenta = '#A8A1DE'
-cyan = '#756482'
+magenta = '#B29740'
+cyan = '#DC2A22'
 white = '#c1c1c1'
 
 # Indexed Colors

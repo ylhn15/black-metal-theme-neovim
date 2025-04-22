@@ -1,4 +1,4 @@
-# name: DARKTHRONE colors for Yazi
+# name: IMPALED-NAZARENE colors for Yazi
 # url: https://github.com/sxyazi/yazi
 # upstream: ${upstream}
 # author: Andrea Schiavini (original code by Casey Miller)
@@ -12,7 +12,7 @@ preview_hovered = { fg = "#c1c1c1", bg = "#000000" }
 find_keyword  = { fg = "#5f8787", italic = true }
 find_position = { fg = "#5f8787", bg = "reset", italic = true }
 
-marker_copied   = { fg = "#FFFFFF" }
+marker_copied   = { fg = "#DC2A22" }
 marker_cut      = { fg = "${error}" }
 marker_selected = { fg = "#5f8787" }
 
@@ -32,8 +32,8 @@ normal_main   = { fg = "#000000", bg = "#aaaaaa", bold = true }
 normal_alt    = { fg = "#000000", bg = "#aaaaaa", bold = true }
 select_main   = { fg = "#000000", bg = "#999999", bold = true }
 select_alt    = { fg = "#000000", bg = "#999999", bold = true }
-unset_main    = { fg = "#000000", bg = "#FFFFFF", bold = true }
-unset_alt     = { fg = "#000000", bg = "#FFFFFF", bold = true }
+unset_main    = { fg = "#000000", bg = "#DC2A22", bold = true }
+unset_alt     = { fg = "#000000", bg = "#DC2A22", bold = true }
 
 [status]
 separator_open  = ""
@@ -69,14 +69,14 @@ hovered = { underline = true }
 [which]
 mask            = { bg = "#000000" }
 cand            = { fg = "#c1c1c1" }
-rest            = { fg = "#FFFFFF" }
-desc            = { fg = "#FFFFFF" }
+rest            = { fg = "#B29740" }
+desc            = { fg = "#DC2A22" }
 separator       = "  "
 separator_style = { fg = "#9b99a3"}
 
 [help]
-on      = { fg = "#FFFFFF" }
-run    = { fg = "#FFFFFF" }
+on      = { fg = "#B29740" }
+run    = { fg = "#DC2A22" }
 desc    = { fg = "#505050" }
 hovered = { fg = "#c1c1c1", bg = "#000000", bold = true }
 footer  = { fg = "#505050", bg = "#000000" }
@@ -84,8 +84,8 @@ footer  = { fg = "#505050", bg = "#000000" }
 [filetype]
 rules = [
 # Media
-{ mime = "image/*", fg = "#FFFFFF"},
-{ mime = "{audio,video}/*", fg = "#FFFFFF"},
+{ mime = "image/*", fg = "#B29740"},
+{ mime = "{audio,video}/*", fg = "#DC2A22"},
 
 # Archives
 { mime = "application/{,g}zip", fg = "#5f8787"},

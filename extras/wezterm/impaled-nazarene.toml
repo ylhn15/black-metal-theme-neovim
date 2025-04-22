@@ -11,8 +11,8 @@ split = "#505050"
 compose_cursor = "#aaaaaa"
 scrollbar_thumb = "#505050"
 
-ansi = ["#111113", "#5f8787", "#c1c1c1", "#888888", "#aaaaaa", "#999999", "#756482", "#c1c1c1"]
-brights = ["#505050", "#5f8787", "#c1c1c1", "#888888", "#aaaaaa", "#A8A1DE", "#756482", "#c1c1c1"]
+ansi = ["#111113", "#5f8787", "#c1c1c1", "#888888", "#aaaaaa", "#999999", "#DC2A22", "#c1c1c1"]
+brights = ["#505050", "#5f8787", "#c1c1c1", "#888888", "#aaaaaa", "#B29740", "#DC2A22", "#c1c1c1"]
 
 [colors.tab_bar]
 inactive_tab_edge = "#505050"
@@ -42,7 +42,7 @@ bg_color = "#000000"
 
 [metadata]
 aliases = []
-name = "EMPEROR"
+name = "IMPALED-NAZARENE"
 url = "https://wezfurlong.org/wezterm/config/files.html"
 upstream = "${upstream}"
 author = "Andrea Schiavini (original code by Casey Miller)"

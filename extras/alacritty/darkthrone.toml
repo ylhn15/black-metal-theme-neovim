@@ -21,7 +21,7 @@ green = '#c1c1c1'
 yellow = '#888888'
 blue = '#aaaaaa'
 magenta = '#999999'
-cyan = '#758487'
+cyan = '#FFFFFF'
 white = '#c1c1c1'
 
 # Bright colors
@@ -31,8 +31,8 @@ red = '#5f8787'
 green = '#c1c1c1'
 yellow = '#888888'
 blue = '#aaaaaa'
-magenta = '#2d3975'
-cyan = '#758487'
+magenta = '#FFFFFF'
+cyan = '#FFFFFF'
 white = '#c1c1c1'
 
 # Indexed Colors

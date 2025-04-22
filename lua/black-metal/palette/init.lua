@@ -38,6 +38,7 @@ local M = {}
 ---@enum Themes
 M.themes = {
 	["dark-funeral"] = "dark-funeral",
+	["impaled-nazarene"] = "impaled-nazarene",
 	bathory = "bathory",
 	burzum = "burzum",
 	darkthrone = "darkthrone",

@@ -1,5 +1,5 @@
 ---@type black-metal.Theme
---- colors taken from Total Death, 1996
+--- colors taken from Transilvanian Hunger, 1994
 local M = {
 	alt = "#5f8787",
 	alt_bg = "#111113",
@@ -13,8 +13,8 @@ local M = {
 	number = "#aaaaaa",
 	operator = "#9b99a3",
 	property = "#c1c1c1",
-	string = "#758487", -- first accent
-	type = "#2d3975", -- second accent
+	string = "#FFFFFF", -- first accent
+	type = "#FFFFFF", -- second accent
 	visual = "#333333",
 	diag_red = "#5f8787",
 	diag_blue = "#999999",

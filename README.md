@@ -1,3 +1,5 @@
+# Black Metal Neovim
+
 ![logo](https://github.com/user-attachments/assets/ea628526-a058-4aeb-832f-c99d36d508a0)
 
 The definitive collection of black-metal inspired neovim colorschemes!

@@ -1,4 +1,5 @@
 ---@type black-metal.Theme
+--- colors taken from Phantom, 2002
 local M = {
 	alt = "#5f8787",
 	alt_bg = "#111113",

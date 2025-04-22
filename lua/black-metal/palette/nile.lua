@@ -1,4 +1,5 @@
 ---@type black-metal.Theme
+--- colors taken from Black seeds of vengeance, 2000
 local M = {
 	alt = "#5f8787",
 	alt_bg = "#111113",

@@ -1,4 +1,5 @@
 ---@type black-metal.Theme
+--- colors taken from The secrets of the black arts, 1996
 local M = {
 	alt = "#5f8787",
 	alt_bg = "#111113",

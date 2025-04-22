@@ -1,4 +1,5 @@
 ---@type black-metal.Theme
+--- colors taken from At the heart of winter, 1999
 local M = {
 	alt = "#5f8787",
 	alt_bg = "#111113",

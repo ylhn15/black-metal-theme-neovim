@@ -1,4 +1,5 @@
 ---@type black-metal.Theme
+--- colors taken from The dawn of the black hearts, 1995
 local M = {
 	alt = "#5f8787",
 	alt_bg = "#111113",

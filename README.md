@@ -1,8 +1,66 @@
-# Black Metal Themes for Neovim
+![logo](https://github.com/user-attachments/assets/ea628526-a058-4aeb-832f-c99d36d508a0)
 
-A collection of black-metal inspired neovim colorschemes. 
+The definitive collection of black-metal inspired neovim colorschemes!
 
 This new version is based on the great work done by @cdmill on https://github.com/cdmill/neomodern.nvim. Big hail to him!
+
+## Included themes
+
+### Bathory
+
+<img width="450" alt="bathory" src="https://github.com/user-attachments/assets/0999bc6e-b5fb-4d04-842c-733609157004" />
+
+### Burzum
+
+<img width="450" alt="burzum" src="https://github.com/user-attachments/assets/4eca109b-99ce-4127-a27a-cec2f3a94436" />
+
+### Dark Funeral
+
+<img width="450" alt="dark-funeral" src="https://github.com/user-attachments/assets/f35d878c-d7a5-4e61-8897-b6d13be42bed" />
+
+### Darkthrone
+
+<img width="450" alt="darkthrone" src="https://github.com/user-attachments/assets/e6552259-6a1b-4952-bc7e-03be3866c45b" />
+
+### Emperor
+
+<img width="450" alt="emperor" src="https://github.com/user-attachments/assets/6a06f7ab-9315-4942-837b-06fdddfdea16" />
+
+### Gorgoroth
+
+<img width="450" alt="gorgoroth" src="https://github.com/user-attachments/assets/c972574a-a816-44ca-828e-ab672021d38c" />
+
+### Immortal
+
+<img width="450" alt="immortal" src="https://github.com/user-attachments/assets/65f4b381-9faf-4d38-b54d-6011d381dec2" />
+
+### Impaled Nazarene
+
+<img width="450" alt="impaled-nazarene" src="https://github.com/user-attachments/assets/7c3795f5-9ed1-4ca5-9ac5-abe28925d3b6" />
+
+### Khold
+
+<img width="450" alt="khold" src="https://github.com/user-attachments/assets/9ed760e5-76e2-42b7-b969-b708e52ceda1" />
+
+### Marduk
+
+<img width="450" alt="marduk" src="https://github.com/user-attachments/assets/c979f2f1-cb28-4b0f-bdb5-ddaf95034979" />
+
+### Mayhem
+
+<img width="450" alt="mayhem" src="https://github.com/user-attachments/assets/2f3a259d-bcd0-421c-a89e-67e58732f28b" />
+
+### Nile 
+
+<img width="450" alt="nile" src="https://github.com/user-attachments/assets/2b45098f-863d-4a1b-aa97-c3957571e367" />
+
+### Taake
+
+<img width="450" alt="taake" src="https://github.com/user-attachments/assets/8c551eed-e429-4d2b-8727-aea8eac14e04" />
+
+### Venom
+
+<img width="450" alt="venom" src="https://github.com/user-attachments/assets/289d4ac4-0ce8-4a6b-88ff-7da871edfed5" />
 
 ## Rationale
 
@@ -137,8 +195,6 @@ require("black-metal").setup {
 ```
 
 See `black-metal.palette` for color names.
-
-## Included themes
 
 ## Cover references
 

@@ -51,6 +51,7 @@ M.themes = {
 	nile = "nile",
 	taake = "taake",
 	venom = "venom",
+	death = "death",
 }
 
 for key, theme in pairs(M.themes) do

@@ -1,7 +1,7 @@
 ---@type black-metal.Theme
 --- colors taken from Scream Bloody Gore, 1987
 local M = {
-	alt = "#5f8787",
+	alt = "#7280af",
 	alt_bg = "#111113",
 	bg = "#252226",
 	comment = "#60686b",

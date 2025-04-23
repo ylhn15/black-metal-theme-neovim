@@ -2,7 +2,7 @@
 --- colors taken from Scream Bloody Gore, 1987
 local M = {
 	alt = "#df4375",
-	alt_bg = "#111113",
+	alt_bg = "#352224",
 	bg = "#252226",
 	comment = "#60686b",
 	constant = "#aaaaaa",
@@ -15,7 +15,7 @@ local M = {
 	property = "#589fbe",
 	string = "#ffffc1",
 	type = "#f53c29",
-	visual = "#333333",
+	visual = "#8d413a",
 	diag_red = "#e61f26",
 	diag_blue = "#189bc7",
 	diag_yellow = "#c13fa8",

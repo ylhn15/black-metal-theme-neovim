@@ -193,6 +193,7 @@ function M.get()
 				["@lsp.type.lifetime"] = { fg = c.type, fmt = "italic" },
 				["@lsp.type.readonly"] = { fg = c.constant, fmt = "italic" },
 				["@lsp.mod.readonly"] = { fg = c.constant, fmt = "italic" },
+				["@lsp.typemod.function.readonly"] = { fg = c.func, fmt = "bold" },
 				["@lsp.mod.typeHint"] = syntax["Type"],
 			}
 		or nil

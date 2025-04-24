@@ -9,6 +9,7 @@ local M = {
 	fg = "#e9d8bc",
 	func = "#ee962a",
 	keyword = "#f53766",
+	import = "#46542c",
 	line = "#252226",
 	number = "#aaaaaa",
 	operator = "#9b99a3",

@@ -8,6 +8,7 @@ local M = {}
 ---@field constant string constants
 ---@field fg string foreground
 ---@field func string functions
+---@field import string imports
 ---@field keyword string keywords
 ---@field line string line highlights: e.g. cursor line
 ---@field number string number/boolean

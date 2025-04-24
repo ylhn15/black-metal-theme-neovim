@@ -20,6 +20,7 @@ function M.get()
 		Exception = { fg = c.diag_red }, -- 'try', 'catch', 'throw'
 		Identifier = { fg = c.property, fmt = Config.code_style.variables }, -- (preferred) any variable
 		Keyword = { fg = c.keyword, fmt = Config.code_style.keywords }, -- any other keyword
+		Import = { fg = c.import, fmt = Config.code_style.keywords }, -- any other keyword
 		Conditional = { fg = c.keyword, fmt = Config.code_style.conditionals }, -- conditionals
 		-- Repeat = { fg = c.keyword, fmt = config.code_style.keywords }, -- loop keywords: 'for', 'while' etc
 		-- Label = { fg = c.keyword }, -- 'case', 'default', etc

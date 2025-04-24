@@ -103,6 +103,7 @@ function M.get()
 
 				-- keywords
 				["@keyword"] = { fg = c.keyword, fmt = Config.code_style.keywords }, -- keywords that don't fall in previous categories
+				["@keyword.import"] = { fg = c.import, fmt = Config.code_style.keywords }, -- keywords that don't fall in previous categories
 				["@keyword.exception"] = syntax["Exception"], -- exception related keywords
 				-- ["@keyword.import"] = M.syntax["PreProc"], -- keywords used to define a function
 				["@keyword.conditional"] = {

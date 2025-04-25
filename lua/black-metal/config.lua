@@ -19,51 +19,52 @@ local M = {}
 ---@field transparent? boolean If true, does not set background colors
 ---@field variant? string light | dark
 M.default = {
-    alt_bg = false,
-    colored_docstrings = true,
-    cursorline_gutter = true,
-    dark_gutter = false,
-    favor_treesitter_hl = false,
-    plain_float = false,
-    show_eob = true,
-    term_colors = true,
-    theme = "iceclimber",
-    toggle_variant_key = nil,
-    transparent = false,
-    variant = "dark",
+	alt_bg = false,
+	colored_docstrings = true,
+	cursorline_gutter = true,
+	dark_gutter = false,
+	favor_treesitter_hl = false,
+	plain_float = false,
+	show_eob = true,
+	term_colors = true,
+	theme = "iceclimber",
+	toggle_variant_key = nil,
+	transparent = false,
+	variant = "dark",
 
-    code_style = {
-        comments = "italic",
-        conditionals = "none",
-        functions = "none",
-        keywords = "none",
-        headings = "bold",
-        operators = "none",
-        keyword_return = "none",
-        strings = "none",
-        variables = "none",
-    },
+	code_style = {
+		comments = "italic",
+		conditionals = "none",
+		functions = "none",
+		keywords = "none",
+		imports = "none",
+		headings = "bold",
+		operators = "none",
+		keyword_return = "none",
+		strings = "none",
+		variables = "none",
+	},
 
-    colors = {},
+	colors = {},
 
-    diagnostics = {
-        darker = true,
-        undercurl = true,
-        background = true,
-    },
+	diagnostics = {
+		darker = true,
+		undercurl = true,
+		background = true,
+	},
 
-    highlights = {},
+	highlights = {},
 
-    plugin = {
-        lualine = {
-            bold = true,
-            plain = false,
-        },
-        cmp = {
-            plain = false,
-            reverse = false,
-        },
-    },
+	plugin = {
+		lualine = {
+			bold = true,
+			plain = false,
+		},
+		cmp = {
+			plain = false,
+			reverse = false,
+		},
+	},
 }
 
 return M

@@ -20,7 +20,7 @@ function M.get()
 		Exception = { fg = c.diag_red }, -- 'try', 'catch', 'throw'
 		Identifier = { fg = c.property, fmt = Config.code_style.variables }, -- (preferred) any variable
 		Keyword = { fg = c.keyword, fmt = Config.code_style.keywords }, -- any other keyword
-		Import = { fg = c.import, fmt = Config.code_style.keywords }, -- any other keyword
+		Import = { fg = c.import, fmt = Config.code_style.imports },
 		Conditional = { fg = c.keyword, fmt = Config.code_style.conditionals }, -- conditionals
 		-- Repeat = { fg = c.keyword, fmt = config.code_style.keywords }, -- loop keywords: 'for', 'while' etc
 		-- Label = { fg = c.keyword }, -- 'case', 'default', etc
@@ -103,7 +103,7 @@ function M.get()
 
 				-- keywords
 				["@keyword"] = { fg = c.keyword, fmt = Config.code_style.keywords }, -- keywords that don't fall in previous categories
-				["@keyword.import"] = { fg = c.import, fmt = Config.code_style.keywords }, -- keywords that don't fall in previous categories
+				["@keyword.import"] = { fg = c.import, fmt = Config.code_style.imports },
 				["@keyword.exception"] = syntax["Exception"], -- exception related keywords
 				-- ["@keyword.import"] = M.syntax["PreProc"], -- keywords used to define a function
 				["@keyword.conditional"] = {

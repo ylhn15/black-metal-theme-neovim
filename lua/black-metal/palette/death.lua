@@ -3,7 +3,7 @@
 local M = {
     alt = "#df4375",
     alt_bg = "#111113",
-    bg = "#1a1b26",
+    bg = "#252226",
     comment = "#60686b",
     constant = "#aaaaaa",
     fg = "#e9d8bc",
